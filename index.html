@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earn Online - Daily Income from Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: #000;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Snow container */
+    .snow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      color: white;
+      font-size: 1em;
+      user-select: none;
+      animation-name: fall;
+      animation-timing-function: linear;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #f9d423, #ff4e50, #1e90ff, #00ff99);
+      background-size: 400% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animateText 8s linear infinite;
+    }
+
+    @keyframes animateText {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 10px auto;
+      opacity: 0.95;
+      color: #ccc;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    section p, section li {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-box img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #ffd700;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    form input, form button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    form button {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #1ebe5d;
+    }
+
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 999;
+      max-width: 320px;
+      display: none;
+      animation: fadeInUp 0.5s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .popup h3 { margin: 0 0 10px; font-size: 1.2rem; }
+    .popup p { margin-bottom: 10px; font-size: 1rem; }
+
+    .popup a {
+      background: white;
+      color: #25D366;
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .popup button {
+      background: transparent;
+      border: none;
+      color: white;
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section h2 { font-size: 1.5rem; }
+      .popup { right: 5%; width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Snow Animation Container -->
+  <div class="snow" id="snow"></div>
+
+  <header>
+    <h1>Earn ₹10,000 – ₹15,000 Daily from Home</h1>
+    <p>Use your mobile or computer. No experience needed. Real, simple online income methods.</p>
+  </header>
+
+  <section>
+    <h2>What We Offer</h2>
+    <p>We help you earn real money through legit and easy online work that you can do from the comfort of your home.</p>
+    <ul>
+      <li>📄 Typing & Data Entry Jobs</li>
+      <li>📲 WhatsApp & Telegram Marketing</li>
+      <li>🤝 Affiliate Marketing & Referrals</li>
+      <li>💬 Chat Support & Freelance Services</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <p>We provide daily payout options, beginner-friendly training, and 24/7 support.</p>
+    <ul>
+      <li>✅ Work Anytime, Anywhere</li>
+      <li>✅ Weekly & Daily Payment Options</li>
+      <li>✅ Zero Investment Required</li>
+      <li>✅ Live Support via WhatsApp</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Real Success Stories</h2>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/600x400/?freelancer,homeoffice,onlinejob" alt="Success story"/>
+    </div>
+    <p>Thousands of people have already started earning using our platform. You could be next!</p>
+  </section>
+
+  <section>
+    <h2>FAQs</h2>
+    <div class="faq">
+      <strong>❓ How much can I earn?</strong>
+      <p>People earn ₹500 to ₹2000+ daily based on the time and tasks they complete.</p>
+    </div>
+    <div class="faq">
+      <strong>❓ Is it safe and genuine?</strong>
+      <p>Yes! 100% genuine earning system. No hidden fees or fake promises.</p>
+    </div>
+    <div class="faq">
+      <strong>❓ How do I get started?</strong>
+      <p>Click the WhatsApp button below and we will guide you step-by-step.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Get Started Now</h2>
+    <p>Fill the form below and you’ll be redirected to WhatsApp to talk to us instantly!</p>
+    <form id="signupForm" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="userName" placeholder="Your Name" required />
+      <input type="email" id="userEmail" placeholder="Your Email" required />
+      <button type="submit">Sign Up & Chat on WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Pop-up -->
+  <div class="popup" id="whatsappPopup">
+    <button onclick="closePopup()">×</button>
+    <h3>Want to Start Earning?</h3>
+    <p>Chat with us on WhatsApp and we’ll help you start today!</p>
+    <a id="whatsappLink" target="_blank">Chat on WhatsApp</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // WhatsApp Logic
+    const whatsappNumber = "919906653998"; // Change to your WhatsApp number
+    const message = "Hi, I'm interested in earning opportunities.";
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    document.getElementById("whatsappLink").href = whatsappURL;
+
+    setTimeout(() => {
+      document.getElementById("whatsappPopup").style.display = "block";
+    }, 3000);
+
+    function closePopup() {
+      document.getElementById("whatsappPopup").style.display = "none";
+    }
+
+    function sendToWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('userName').value.trim();
+      const email = document.getElementById('userEmail').value.trim();
+      const msg = `Hi, my name is ${name}, and my email is ${email}. I'm interested in earning opportunities.`;
+      const link = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
+      window.open(link, "_blank");
+    }
+
+    // Snow Animation
+    const snowContainer = document.getElementById('snow');
+    for (let i = 0; i < 80; i++) {
+      let snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.style.left = Math.random() * 100 + "vw";
+      snowflake.style.animationDuration = 2 + Math.random() * 5 + "s";
+      snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
+      snowflake.textContent = "❄";
+      snowContainer.appendChild(snowflake);
+    }
+  </script>
+
+</body>
+</html>
